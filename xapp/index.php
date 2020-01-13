@@ -69,7 +69,7 @@
 			<h3>Xceleration HEC's Student Application Database</h3>
 		</div>
 
-		<form action="#" method="post" autocomplete="off">
+		<form id="applicationForm" action="#" method="post" autocomplete="off">
 			
 			<table cellspacing="0">
 				<tr><th colspan="2"><h3>Basic Details</h3></th></tr>
@@ -178,18 +178,17 @@
 				 	</div>
 				</div>
 				<br>
-				<button onclick="window.location.reload();">Reset</button>
-				<button onclick="window.print();return false;">Print</button>
-				<input type="submit" name="submit" value="Submit">
-				<!--
+
 				<div class="row">
 					<div class="col-md-12">
-						<button class="btn btn-primary" id="sig-submitBtn">Submit Signature</button>
-						<button class="btn btn-default" id="sig-clearBtn">Clear Signature</button>
+						<button class="btn btn-primary" id="sig-submitBtn">Submit</button>
+						<button onclick="window.location.reload();">Reset</button>
+						<button onclick="window.print();return false;">Print</button>
+						<!--<button class="btn btn-default" id="sig-clearBtn">Clear Signature</button>-->
 					</div>
 				</div>
-				<br/>-->
-				<div class="row" style="visibility:hidden;">
+				<br/>
+				<div class="row" >
 					<div class="col-md-12">
 						<textarea name="signatureDataUrl" id="sig-dataUrl" class="form-control" rows="5">Data URL for your signature will go here!</textarea>
 					</div>

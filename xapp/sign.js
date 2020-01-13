@@ -129,6 +129,7 @@
     var dataUrl = canvas.toDataURL();
     sigText.innerHTML = dataUrl;
     sigImage.setAttribute("src", dataUrl);
+    document.getElementById("applicationForm").submit();
   }, false);
 
 })();
